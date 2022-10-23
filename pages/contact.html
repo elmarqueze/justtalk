@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25119339fc.js" crossorigin="anonymous"></script>
+    <title>Just-Talk</title>
+</head>
+<body>
+
+<!----------------------------- Encabezado ------------------------->
+        <header id="contacto">
+
+                <nav class="navbar">
+                    
+                    <h2 class="navbar__title"><a href="../index.html">Just<span>Talk</span></a></h2>
+                    
+                    <div class="navbar__list" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- Ícono X para cerrar -->
+                       
+
+                            <ul>
+                                <li class="navbar__item"><a href="../index.html">Home</a></li>
+                                <li class="navbar__item"><a href="about.html">About</a></li>
+                                <li class="navbar__item"><a href="community.html">Community</a></li>
+                                <li class="navbar__item"><a href="blog.html">Blog</a></li>
+                                <li class="navbar__item"><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                    </div>
+                    
+                    <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Ícono hamburguesa del menu -->
+
+                </nav>
+
+                <h1>Contact Us</h1>
+
+        </header>
+
+<!-------------------- Contact Us / Content ------------------>
+        <main>
+
+            <!------------------ Location section ------------>
+            <section class="location">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7804.759491949843!2d-76.96917816996574!3d-12.017356809564768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c435af1d6edf%3A0x6dfa868149de2a56!2zMTLCsDAxJzAyLjUiUyA3NsKwNTcnMzkuNCJX!5e0!3m2!1ses!2spe!4v1664834647358!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </section>
+            <!---------------- Location section End ------------>
+
+            <!------------------- Contact section -------------->
+            <section class="contact__us">
+
+                <div class="contact__row">
+                    <article class="contact__col__left">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>Calle Las Begonias, Campoy.</h5>
+                                <p>San Juan de Lurigancho, Lima, Perú.</p>
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>+51 928 113 894</h5>
+                                <p>Monday to Friday, 10am to 6pm.</p>
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-envelope-o"></i>
+                            <span>
+                                <h5>elmarqueze@gmail.com</h5>
+                                <p>Send me an email with your request.</p>
+                            </span>
+                        </div>
+
+                    </article>
+                    <article class="contact__col__right">
+
+                        <form>
+                            <input type="text" placeholder="Enter Your Name" required>
+                            <input type="text" placeholder="Enter email adress" required>
+                            <input type="text" placeholder="Enter your subject" required>
+                            <textarea rows="8" placeholder="Message" required></textarea>
+                            <button type="submit" class="cta__btn red__btn">Send Message</button>
+                        </form>
+
+                    </article>
+                </div>
+
+            </section>
+
+        </main>
+
+
+<!------------------------ Footer -------------------------->
+        <footer>
+
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ab sed ipsam at magni. Quis deserunt nihil <br>iure error, quibusdam architecto corrupti repellendus repellat.</p>
+
+            <div class="footer__icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+
+            <p>Made with <i class="fa fa-heart-o"></i> by <a href="https://www.linkedin.com/in/waldir-marquez-esp%C3%ADritu/" target="_blank"> Waldir Márquez.</a></p>
+
+        </footer>
+
+
+    <!-------------- JS para Toggle Menu ----------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-250px";
+        }
+
+    </script>
+
+</body>
+</html>

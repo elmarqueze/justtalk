@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25119339fc.js" crossorigin="anonymous"></script>
+    <title>Just-Talk</title>
+</head>
+<body>
+
+<!----------------------------- Encabezado ------------------------->
+        <header id="blog">
+
+                <nav class="navbar">
+                    
+                    <h2 class="navbar__title"><a href="../index.html">Just<span>Talk</span></a></h2>
+                    
+                    <div class="navbar__list" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- Ícono X para cerrar -->
+                       
+
+                            <ul>
+                                <li class="navbar__item"><a href="../index.html">Home</a></li>
+                                <li class="navbar__item"><a href="about.html">About</a></li>
+                                <li class="navbar__item"><a href="community.html">Community</a></li>
+                                <li class="navbar__item"><a href="blog.html">Blog</a></li>
+                                <li class="navbar__item"><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                    </div>
+                    
+                    <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Ícono hamburguesa del menu -->
+
+                </nav>
+
+                <h1> Everybody's Blog</h1>
+
+        </header>
+
+<!-------------------------- Main ----------------------------->
+        <main>
+
+            <!------------- Blog / Content Section---------->
+
+            
+
+            <section class="blog__content">
+                <div class="blog__row">
+
+                    <!------------------ Left side ----------------->
+                    <article class="blog__left">
+                        <img src="../img/familia.jpg" alt="familia">
+                        <h2>What Happend When Children goes to the Movies?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa?</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim molestiae laudantium dolorem rerum in cupiditate adipisci expedita vel labore, ex nemo nihil neque ab? Suscipit, quae? Dolorem, aliquid ipsa.</p>
+
+                        <div class="comment__box">
+                            <h3>Leave a comment</h3>
+                            <form class="comment__form">
+                                <input type="text" placeholder="Enter Name" name="Enter Name">
+                                <input type="email" placeholder="Enter Email" name="Enter Email">
+                                <textarea rows="5" placeholder="Your Comment" name="Comment"></textarea>
+                                <button type="submit" class="cta__btn red__btn">Post Comment</button>
+                            </form>
+                        </div>
+
+                    </article>
+                    <!----------------- Left side end---------------->
+
+                    <!------------------ Right side ----------------->
+                    <article class="blog__right">
+                        <h3>Post Categories</h3>
+                        <div>
+                            <span>Comedy Movies</span>
+                            <span>11</span>
+                        </div>
+                        <div>
+                            <span>Last Updates</span>
+                            <span>33</span>
+                        </div>
+                        <div>
+                            <span>Horror Series</span>
+                            <span>44</span>
+                        </div>
+                        <div>
+                            <span>Game of Thrones</span>
+                            <span>56</span>
+                        </div>
+                        <div>
+                            <span>Romantic Movies</span>
+                            <span>41</span>
+                        </div>
+                        <div>
+                            <span>The Walking Dead</span>
+                            <span>29</span>
+                        </div>
+                    </article>
+                    <!---------------- right side end -------------->
+                </div>
+
+            </section>
+            
+            
+        </main>
+
+
+<!------------------------ Footer -------------------------->
+        <footer>
+
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ab sed ipsam at magni. Quis deserunt nihil <br>iure error, quibusdam architecto corrupti repellendus repellat.</p>
+
+            <div class="footer__icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+
+            <p>Made with <i class="fa fa-heart-o"></i> by <a href="https://www.linkedin.com/in/waldir-marquez-esp%C3%ADritu/" target="_blank"> Waldir Márquez.</a></p>
+
+        </footer>
+
+
+    <!-------------- JS para Toggle Menu ----------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-250px";
+        }
+
+    </script>
+
+</body>
+</html>

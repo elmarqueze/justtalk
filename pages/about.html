@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25119339fc.js" crossorigin="anonymous"></script>
+    <title>Just-Talk</title>
+</head>
+<body>
+
+<!----------------------------- Encabezado ------------------------->
+        <header class="sub__header">
+
+                <nav class="navbar">
+                    
+                    <h2 class="navbar__title"><a href="../index.html">Just<span>Talk</span></a></h2>
+                    
+                    <div class="navbar__list" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- Ícono X para cerrar -->
+                       
+
+                            <ul>
+                                <li class="navbar__item"><a href="../index.html">Home</a></li>
+                                <li class="navbar__item"><a href="about.html">About</a></li>
+                                <li class="navbar__item"><a href="community.html">Community</a></li>
+                                <li class="navbar__item"><a href="blog.html">Blog</a></li>
+                                <li class="navbar__item"><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                    </div>
+                    
+                    <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Ícono hamburguesa del menu -->
+
+                </nav>
+
+                <h1>About Us</h1>
+
+        </header>
+
+<!-------------------------- Main ----------------------------->
+        <main>
+
+            <!-------------About Us / Content Section con GRIDS---------->
+            <section class="about__us">
+
+                <div class="about__row">
+
+                    <article class="about__col">
+                        <h2>We are a community of film critics</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quasi similique corrupti at officiis inventore! Cumque blanditiis aut enim voluptatum amet, sit ut similique delectus atque quasi officiis quisquam doloribus?</p>
+                        <a href="" class="cta__btn red__btn">Explore Now</a>
+                    </article>
+                <!-- </div> -->
+
+                <!-- <div class="row"> -->
+                    <article class="about__col">
+                        <img src="../img/aboutcommunity.jpg" alt="friends">
+                    </article>
+                    
+                </div>
+
+            </section>
+            <!--------Fin de About Us / Content Section------->
+
+        </main>
+
+
+<!------------------------ Footer -------------------------->
+        <footer>
+
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ab sed ipsam at magni. Quis deserunt nihil <br>iure error, quibusdam architecto corrupti repellendus repellat.</p>
+
+            <div class="footer__icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+
+            <p>Made with <i class="fa fa-heart-o"></i> by <a href="https://www.linkedin.com/in/waldir-marquez-esp%C3%ADritu/" target="_blank"> Waldir Márquez.</a></p>
+
+        </footer>
+
+
+    <!-------------- JS para Toggle Menu ----------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-250px";
+        }
+
+    </script>
+
+</body>
+</html>
