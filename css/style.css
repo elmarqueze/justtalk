@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ----------------------------------  GENERALES  ------------------------------------ */
+/*=============== RESET ===============*/
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-/* ----------------------------------  ENCABEZADO  ------------------------------------ */
+/*=============== HEADER ===============*/
 header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/banner.jpg);
@@ -106,8 +106,7 @@ header .navbar__item:hover::after {
   width: 100%;
 }
 
-/* ----------------------------------  FIN DE ENCABEZADO  ------------------------------------ */
-/* ------------------------------------  SECTION ONE  ----------------------------------------- */
+/*=============== HOME PAGE ===============*/
 .sectionone {
   width: 100%;
   min-height: 81.5vh;
@@ -151,23 +150,6 @@ header .navbar__item:hover::after {
   .sectionone__text p {
     margin: auto;
   }
-}
-
-.cta__btn {
-  display: inline-block;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 0.8rem;
-  background-color: transparent;
-  position: relative;
-  cursor: pointer;
-}
-
-.cta__btn:hover {
-  border: 1px solid #f44336;
-  background-color: #f44336;
-  transition: 0.8s;
 }
 
 nav .fa {
@@ -502,8 +484,25 @@ nav .fa {
   }
 }
 
-/* ------------------------------------ FIN DE CALL TO ACTION  ----------------------------------------- */
-/* ---------------------------------  FOOTER ----------------------------------- */
+/*=============== BUTTONS ===============*/
+.cta__btn {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 0.8rem;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.cta__btn:hover {
+  border: 1px solid #f44336;
+  background-color: #f44336;
+  transition: 0.8s;
+}
+
+/*=============== FOOTER ===============*/
 footer {
   width: 80%;
   text-align: center;
@@ -567,11 +566,7 @@ footer a:hover {
   color: #f44336;
 }
 
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* -----------------About Us / Page--------------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
+/*=============== ABOUT PAGE ===============*/
 .sub__header {
   height: 50vh;
   width: 100%;
@@ -626,24 +621,21 @@ footer a:hover {
     font-size: 0.8rem;
   }
 }
-.about__us .about__row .about__col .red__btn {
-  border: 1px solid #f44336;
-  background-color: transparent;
+.about__us .about__row .about__col a {
+  margin: 10px 0;
   color: #f44336;
+  border: 1px solid #f44336;
 }
-.about__us .about__row .about__col .red__btn:hover {
-  color: #fff;
+.about__us .about__row .about__col a:hover {
+  color: #f0f0f0;
+  border: 1px solid #f44336;
 }
 .about__us .about__col img {
   width: 100%;
   box-shadow: 2px 4px 3px #777;
 }
 
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ---------------- Community / Page--------------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
+/*=============== COMMUNITY PAGE ===============*/
 #community {
   height: 50vh;
   width: 100%;
@@ -657,11 +649,7 @@ footer a:hover {
   margin-top: 50px;
 }
 
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ------------------ Blog / Page ----------------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
+/*=============== BLOG PAGE ===============*/
 #blog {
   height: 50vh;
   width: 100%;
@@ -749,8 +737,8 @@ footer a:hover {
 }
 .blog__content .blog__row .blog__left .comment__box .comment__form button {
   margin: 10px 0;
-  color: #555;
-  border: 1px solid #ccc;
+  color: #f44336;
+  border: 1px solid #f44336;
 }
 .blog__content .blog__row .blog__left .comment__box .comment__form button:hover {
   color: #f0f0f0;
@@ -774,11 +762,7 @@ footer a:hover {
   padding: 8px;
 }
 
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ---------------- Contact / Page ---------------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
+/*=============== CONTACT PAGE ===============*/
 #contacto {
   height: 50vh;
   width: 100%;
@@ -877,8 +861,8 @@ footer a:hover {
 }
 .contact__us .contact__row .contact__col__right button {
   margin: 10px 0;
-  color: #555;
-  border: 1px solid #ccc;
+  color: #f44336;
+  border: 1px solid #f44336;
 }
 .contact__us .contact__row .contact__col__right button:hover {
   color: #f0f0f0;
