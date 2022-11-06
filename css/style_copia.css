@@ -1,0 +1,793 @@
+/* ----------------------------------  GENERALES  ------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ----------------------------------  ENCABEZADO  ------------------------------------ */
+header{
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/banner.jpg);
+}
+
+.navbar{
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__title{
+    font-size: 2rem;
+}
+
+.navbar__title a{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar__title span{
+    color: #f44336;
+    font-weight:bold;
+}
+
+
+.navbar__list ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar__item a{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.navbar__item::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar__item:hover::after{
+    width: 100%;
+}
+
+/* ----------------------------------  FIN DE ENCABEZADO  ------------------------------------ */
+
+
+
+/* ------------------------------------  SECTION ONE  ----------------------------------------- */
+
+.sectionone{
+    width: 100%;
+    min-height: 81.5vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionone__text{
+    width: 90%;
+    color: #fff;
+    /* position: relative; */
+    /* top: 90px; */
+    /* justify-content: center; */
+    /* margin: auto; */
+    /*------- Cambie de position relative a absolute para usar transform -------*/
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.sectionone__text h1{
+    font-size: 3.8rem;
+}
+
+.sectionone__text p{
+    margin: 10px 0 40px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.cta__btn{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.cta__btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 0.8s;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+/*----- Estoy utilizando este max-width:700px para que funcione en pantallas de 320px a 1200px -----*/
+@media(max-width: 700px){
+
+
+    .sectionone__text h1{
+        font-size: 1.25rem;
+    }
+
+    .navbar__list ul li{
+        display: block;
+
+    }
+
+    .navbar__list{
+        position: fixed;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.8s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .navbar__list ul{
+        padding: 30px;
+    }
+}
+/* ------------------------------------  FIN DE SECTION ONE  ----------------------------------------- */
+
+
+/* ------------------------------------  SECTION TWO  ----------------------------------------- */
+
+.sectiontwo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* Aquí se está aplicando grids + flex */
+
+.row{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.sectiontwoo__col{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.sectiontwoo__col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sectiontwoo__col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+/*----- Estoy utilizando este max-width:700px para que funcione en pantallas de 320px a 1200px -----*/
+@media(max-width: 700px){
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .sectionone p{
+        margin: auto;
+    }
+}
+/* ------------------------------------ FIN DE SECTION TWO  ----------------------------------------- */
+
+/* ------------------------------------  SECTION THREE  ----------------------------------------- */
+
+.sectionthree{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.sectionthree__col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionthree__col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sectionthree__col img{
+    width: 100%;
+    display: block;
+}
+
+.sectionthree__layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transition: 0.5s;
+}
+
+.sectionthree__layer:hover{
+    background-color: rgba(226,0,0,0.7);
+}
+
+.sectionthree__layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.sectionthree__layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/* ------------------------------------ FIN DE SECTION THREE  ----------------------------------------- */
+
+/* ------------------------------------  SECTION FOUR  ----------------------------------------- */
+
+.sectionfour{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.sectionfour__col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.sectionfour__col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sectionfour__col p{
+    padding: 0;
+    text-align: left;
+}
+
+.sectionfour__col h3{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    text-align: left;
+}
+
+/*----- Estoy utilizando este max-width:700px para que funcione en pantallas de 320px a 1200px -----*/
+@media(max-width:700px){
+    .sectionfour{
+        min-width: 100%;
+    }
+
+}
+
+/* ------------------------------------ FIN DE SECTION FOUR  ----------------------------------------- */
+
+
+/* ------------------------------------  SECTION FIVE  ----------------------------------------- */
+
+.sectionfive{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.sectionfive h2,p{
+    text-align: center;
+    justify-content: center;
+}
+
+.sectionfive__col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #fff3ff;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.sectionfive__col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+
+.sectionfive__col p{
+    padding: 0;
+    text-align: left;
+}
+
+.sectionfive__col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.sectionfive__col .fa{
+    color: #f44336;
+}
+
+/*----- Estoy utilizando este max-width:700px para que funcione en pantallas de 320px a 1200px -----*/
+@media(max-width: 700px){
+
+    .sectionfive__col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* ------------------------------------ FIN DE SECTION FIVE  ----------------------------------------- */
+
+
+/* ---------------------------------  CALL TO ACTION  ----------------------------------- */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363),rgba(0,0,0,0.363)), url(../img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h2{
+    color: #fff;
+    line-height: 1.3rem;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*----- Estoy utilizando este max-width:700px para que funcione en pantallas de 320px a 1200px -----*/
+@media(max-width:700px){
+    .cta h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------------------------------ FIN DE CALL TO ACTION  ----------------------------------------- */
+
+
+/* ---------------------------------  FOOTER ----------------------------------- */
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h4{
+    margin-bottom: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer__icons{
+    color: #f44336;
+    margin: 0 20px;
+    cursor: pointer;
+    padding: 0 50px;
+}
+
+.fa-heart-o{
+    color: #f44336;
+}
+
+footer a{
+    color: #777;
+}
+
+footer a:hover{
+    color: #f44336;
+}
+
+/*----- Estoy utilizando este max-width:700px para que funcione en pantallas de 320px a 1200px -----*/
+@media(max-width:700px){
+
+    footer{
+        margin-top: 0;
+    }
+    footer h4,p{
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* -----------------About Us / Page--------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.sub__header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub__header h1{
+    margin-top: 50px;
+}
+
+/*------------ GRIDS -----------------*/
+
+.about__us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    column-gap: 30px;
+}
+
+.about__row{
+display: grid;
+column-gap: 80px;
+grid-template-columns: repeat(2,1fr);
+justify-content: center;
+}
+
+.about__col{
+    padding: 30px 2px;
+}
+
+.about__col img{
+    width: 100%;
+    box-shadow: 2px 4px 3px #777;
+}
+
+.about__col h2{
+    padding-top: 0;
+}
+
+.about__col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.red__btn{
+    border: 1px solid #f44336;
+    background-color: transparent;
+    color: #f44336;
+}
+
+.red__btn:hover{
+    color: #fff;
+}
+
+@media(max-width:700px){
+
+    .about__col p{
+       margin-left: 0px;
+    }
+
+    .about__row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+    }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ---------------- Community / Page--------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+#community{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/community.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#community h1{
+    margin-top: 50px;
+}
+
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------ Blog / Page ----------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+#blog{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/blog.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#blog h1{
+    margin-top: 50px;
+}
+
+
+/* Aquí empieza GRIDS + FLEX */
+
+.blog__content{
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog__row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+}
+
+.blog__left{
+    grid-column: 1/3;
+}
+
+.blog__left img{
+    width: 100%;
+}
+
+.blog__left h2{
+    color: #222;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog__left p{
+    color: #999;
+    padding: 0;
+    text-align: left;
+}
+
+.blog__right{
+    flex-basis: 32%;
+}
+
+.blog__right h3{
+    background-color: #f44336;
+    color: #fff;
+    padding: 7px 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.blog__right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+}
+
+.comment__box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment__box h3{
+    text-align: left;
+}
+
+.comment__form{
+    margin: 20px 0px;
+}
+
+.comment__form input,
+.comment__form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    resize: none;
+}
+
+
+.comment__form button{
+    margin: 10px 0;
+}
+
+@media(max-width:700px){
+    .blog__row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 0px;
+    }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ---------------- Contact / Page ---------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+#contacto{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#contacto h1{
+    margin-top: 50px;
+}
+
+
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact__us{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+
+/* Aquí empieza GRIDS + FLEX */
+
+.contact__row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+}
+
+.contact__col__left{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact__col__left div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact__col__left div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact__col__left div p{
+    padding: 0%;
+    text-align: left;
+}
+
+.contact__col__left div h5{
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact__col__right{
+    grid-column: 2/4;
+}
+
+.contact__col__right input, .contact__col__right textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+
+@media(max-width:700px){
+    .contact__row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 0px;
+    }
+
+    .contact__col__right{
+        grid-column: 1;
+    }
+}
