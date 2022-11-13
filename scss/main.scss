@@ -1,19 +1,21 @@
-@import "./utils/mixins";
+@import "utils/mixins";
 
-@import "./base/reset";
+@import "utils/variables";
 
-@import "./layout/header";
+@import "base/reset";
 
-@import "./pages/home";
+@import "layout/header";
 
-@import "./components/buttons";
+@import "pages/home";
 
-@import "./layout/footer";
+@import "components/buttons";
 
-@import "./pages/about";
+@import "layout/footer";
 
-@import "./pages/community";
+@import "pages/about";
 
-@import "./pages/blog";
+@import "pages/community";
 
-@import "./pages/contact"
+@import "pages/blog";
+
+@import "pages/contact";

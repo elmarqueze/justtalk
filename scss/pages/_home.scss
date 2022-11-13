@@ -4,13 +4,13 @@
 .sectionone{
     width: 100%;
     min-height: 81.5vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/banner.jpg);
+    background-image: $linear-gradient, url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
 
     &__text{
         width: 90%;
-        color: #fff;
+        color: $principal-font;
         position: absolute;
         top: 60%;
         left: 50%;
@@ -32,7 +32,7 @@
         p{
             margin: 10px 0 40px;
             font-size: 0.9rem;
-            color: #fff;
+            color: $principal-font;
 
             @include mobile {
                 margin: auto;
@@ -53,7 +53,7 @@ nav .fa{
 
     @include mobile {
         display: block;
-        color: #fff;
+        color: $principal-font;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -61,7 +61,7 @@ nav .fa{
 
     @include tablet {
         display: block;
-        color: #fff;
+        color: $principal-font;
         margin: 10px;
         font-size: 25px;
         cursor: pointer;
@@ -86,7 +86,7 @@ nav .fa{
     }
 
     p{
-        color: #777;
+        color: $secondary-font;
         font-size: 0.8rem;
         font-weight: 300;
         line-height: 22px;
@@ -115,7 +115,7 @@ nav .fa{
     /* Aquí se está aplicando grids + flex */
     .sectiontwoo__col{
         flex-basis: 31%;
-        background-color: #fff3f3;
+        background-color: $secondary-background;
         border-radius: 10px;
         margin-bottom: 5%;
         padding: 20px 12px;
@@ -150,7 +150,7 @@ nav .fa{
     }
 
     p{
-        color: #777;
+        color: $secondary-font;
         font-size: 0.8rem;
         font-weight: 300;
         line-height: 22px;
@@ -188,13 +188,13 @@ nav .fa{
     }
 
     &__layer:hover {
-        background-color: rgba(226,0,0,0.7);
+        background-color: $principal-background;
     }
 
     .sectionthree__layer h3{
         width: 100%;
         font-weight: 500;
-        color: #fff;
+        color: $principal-font;
         font-size: 26px;
         bottom: 0;
         left: 50%;
@@ -241,7 +241,7 @@ nav .fa{
     }
 
     p{
-        color: #777;
+        color: $secondary-font;
         font-size: 0.8rem;
         font-weight: 300;
         line-height: 22px;
@@ -320,7 +320,7 @@ nav .fa{
         border-radius: 10px;
         margin-bottom: 5%;
         text-align: left;
-        background-color: #fff3ff;
+        background-color: $secondary-background;
         padding: 25px;
         cursor: pointer;
         display: flex;
@@ -364,7 +364,7 @@ nav .fa{
         }
 
         .fa {
-            color: #f44336;
+            color: $frst-btn-font;
         }
     }
 }
@@ -379,7 +379,7 @@ nav .fa{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.363),rgba(0,0,0,0.363)), url(../img/banner2.jpg);
+    background-image: $linear-gradient, url(../img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
